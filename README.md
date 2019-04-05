@@ -51,10 +51,9 @@ JenDatabaseQueryTechniques.checkSynonym(userMessage) - attempts to match userMes
 # New Features Implemented
 (1) A spell checker was added to the system, which improved the program by being able to recognize important key words even when they have been misspelled. This improves the flow of the conversation.
 
-.. image:: https://ibb.co/XSHWG6N
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
+<br>
+<img height="700" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/error.png" />
+<br>
 
 [Recognizes spelling error](https://ibb.co/XSHWG6N)
 

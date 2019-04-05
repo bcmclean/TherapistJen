@@ -13,10 +13,10 @@ When running TherapistJen, first run the "TherapistJen.py" file and then follow 
 
 Proceed to use TherapistJen to aid you in the maintenance of your mental health.
 
-# Dependencies:
+# Dependencies
 re, cherrypy, pyodbc, spacy, random, heapq, spellchecker, itemgetter, summarize
 
-# Components:
+# Components
 The functionality of the program is divided into five sections:
 
 Web-based Platform Use - located in the "static" folder

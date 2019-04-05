@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Therapist Jen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setup()
+            $("button").click(sendMessage);//attach an event handler to send button
+        });
+    </script>
+    <link rel="stylesheet" href="static/appStyle.css">
+</head>
+<body>
+
+<div id="header">
+    <!-- Therpist Jen Logo -->
+    <img src="static/TherapistJen.JPG" class="center"></img>
+</div>
+<!-- Interface for displaying chat messages -->
+<iframe id="messageHistory" src="static/chatDisplay/chatDisplay.html" name="messageHistory"></iframe>
+<!-- The controls below the chat history -->
+<div id="controls">
+    <textarea></textarea>
+    <button id="SendButton">Send</button>
+</div>
+
+<script>
+    function sendMessage() {
+        var typedText = $("textarea").val();
+        if (typedText != "") {
+            window.messageHistory.addUserMessage(typedText);
+            $.ajax({
+                type: "POST", //type of HTTP request
+                url: "therapistJenResponce", //method in TherapistJen.py to invoke
+                dataType: "text", //type of data to return
+                data: "userInput=" + typedText,
+                error: function () { //invokes if request is not successful
+                    alert("error");
+                },
+                success: function (data) { //Invoked if request is successful
+                    window.messageHistory.addBotMessage(data)//Print the returned responce to chat history
+                }
+            });
+
+            $("textarea").val("");//clear user input area
+        }
+    };
+
+    function setup() {
+         $.ajax({
+                type: "POST", //type of HTTP request
+                url: "therapistJenResponce", //method in TherapistJen.py to invoke
+                dataType: "text", //type of data to return
+                error: function () { //invokes if request is not successful
+                    alert("error on setup");
+                },
+                success: function (data) { //Invoked if request is successful
+                    window.messageHistory.addBotMessage(data)//Print the returned responce to chat history
+                }
+            });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "ISO-8859-1";
+
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #62aae8;
+	overflow-x: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+ #header {
+	margin: 0;
+	height: 7%;
+	width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+img {
+	height: 100%;
+	border: 0;
+}
+
+ #controls {
+	margin: 0;
+	height: 13%;
+	width: 95%;
+	display: flex;
+	align-items: center;
+}
+
+textarea {
+	width: 90%;
+	height: 80%;
+	font-size: 24px;
+	font-family: Helvetica;
+	resize: none;
+	border-radius: 20px;
+}
+
+button {
+	width: 10%;
+	height: 80%;
+	font-size: 24px;
+	resize: none;
+	border-radius: 20px;
+	margin-left: 10px;
+	background: #42f471;
+	color: white;
+}
+
+iframe {
+	scrolling: no;
+	margin: 0;
+	height: 80%;
+	width: 95%;
+	background-color: #ffffff;
+	border-radius: 20px;
+}

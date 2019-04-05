@@ -55,27 +55,35 @@ JenDatabaseQueryTechniques.checkSynonym(userMessage) - attempts to match userMes
 <img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/error.png" />
 <br>
 
-[Recognizes spelling error](https://ibb.co/XSHWG6N)
-
 (2) Natural Language Processing, POS Tagging. By adding this to the system, the program is then able to preprocess user input by filtering out adjectives.
 
 This example recognizes "miserable" as sad, even though it's not in the list of synonyms.
-![Recognizes similarity](https://ibb.co/gtB62RK)
+<br>
+<img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/similarity.png" />
+<br>
 
 (3) Similarity scores. Similarity scores are used on the text that is filtered by POS tagging. Adding this feature allows similar words to be recognized that may not be included in the synonym recognition list. With this feature, the system is able to better connect the feeling to the users input and thus, improve the flow of the conversation.
 
 
 This example calculates the scores for all matching words. Results: angry (2), sad (1). Angry has the highest similarity score.
-![Similarity scores](https://ibb.co/Rj2gTXx)
+<br>
+<img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/similarityscores.png" />
+<br>
 
 (4) Various responses for off-topic input. If user input is unable to be recognized or acknowledged by the system, the program will then randomly select one of five responses. This improves the system by avoiding repetition and allowing the conversation to appear more natural.
 
-![Off-Topic](https://ibb.co/jTxBh8J)
+<br>
+<img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/offtopic.png" />
+<br>
 
 (5) New topic - Gratitude. A new topic has been added to allow users to practice gratitude. This improves the system by adding another strategy for improving a user's mood and well-being.
 
-![Gratitude](https://ibb.co/Z8Cck0g)
+<br>
+<img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/gratitude.png" />
+<br>
 
 (6) Summarization. Added to the system is the capability to rephrase user input and change it into the second person. This summary is added to the database response and returned to the user. This improves the system by showing that the ChatBot is practicing "active listening skills" and knows what the user is saying. It improves the overall flow of the conversation and adds meaning to the interaction.   
 
-![Active Listening](https://ibb.co/D8wH2Sd)
+<br>
+<img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/summary.png" />
+<br>

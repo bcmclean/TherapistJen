@@ -51,8 +51,10 @@ JenDatabaseQueryTechniques.checkSynonym(userMessage) - attempts to match userMes
 # New Features Implemented
 (1) A spell checker was added to the system, which improved the program by being able to recognize important key words even when they have been misspelled. This improves the flow of the conversation.
 
-<img src="https://ibb.co/XSHWG6N" alt="My cool logo"/>
-# My cool project and above is the logo of it
+.. image:: https://ibb.co/XSHWG6N
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
 
 [Recognizes spelling error](https://ibb.co/XSHWG6N)
 

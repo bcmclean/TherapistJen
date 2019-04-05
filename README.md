@@ -79,11 +79,11 @@ This example calculates the scores for all matching words. Results: angry (2), s
 (5) New topic - Gratitude. A new topic has been added to allow users to practice gratitude. This improves the system by adding another strategy for improving a user's mood and well-being.
 
 <br>
-<img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/gratitude.png" />
+<img height="300" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/gratitude.png" />
 <br>
 
 (6) Summarization. Added to the system is the capability to rephrase user input and change it into the second person. This summary is added to the database response and returned to the user. This improves the system by showing that the ChatBot is practicing "active listening skills" and knows what the user is saying. It improves the overall flow of the conversation and adds meaning to the interaction.   
 
 <br>
-<img height="200" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/summary.png" />
+<img height="300" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/summary.png" />
 <br>

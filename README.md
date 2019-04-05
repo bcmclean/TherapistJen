@@ -85,5 +85,5 @@ This example calculates the scores for all matching words. Results: angry (2), s
 (6) Summarization. Added to the system is the capability to rephrase user input and change it into the second person. This summary is added to the database response and returned to the user. This improves the system by showing that the ChatBot is practicing "active listening skills" and knows what the user is saying. It improves the overall flow of the conversation and adds meaning to the interaction.   
 
 <br>
-<img height="300" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/summary.png" />
+<img height="400" src="https://github.com/bcmclean/TherapistJen/blob/master/Chat%20Snippets/summary.png" />
 <br>

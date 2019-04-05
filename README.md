@@ -5,8 +5,7 @@ Therapist Jen is here as a companion to help you work through negative feelings 
 
 Disclaimer: TherapistJen is a tool meant to help encourage positive behaviour and is designed to work alongside other methods such as professional therapy.
 
-
-#Compiling and Running TherapistJen
+# Compiling and Running TherapistJen
 
 To compile and run TherapistJen, one must first be either on the UBC Okanagan campus and connected to an official UBC network, or connected to myvpn.ok.ubc.ca. This will allow TherapistJen to access her database or responses. 
 
@@ -14,12 +13,11 @@ When running TherapistJen, first run the "TherapistJen.py" file and then follow 
 
 Proceed to use TherapistJen to aid you in the maintenance of your mental health.
 
-
-#Dependencies:
+# Dependencies:
 re, cherrypy, pyodbc, spacy, random, heapq, spellchecker, itemgetter, summarize
 
-#Components:
-The functionality of the program is divided into four sections:
+# Components:
+The functionality of the program is divided into five sections:
 
 Web-based Platform Use - located in the "static" folder
 
@@ -31,9 +29,8 @@ Natural Language Processing - located in the "JenDatabaseQueryTechniques.py" fil
 
 SQL Database Queries - located in the "JenDatabaseQueryTechniques.py" file, this is used to access the database of responses that TherapistJen has available.
 
-
-#Classes:
-TherapistJen.therapistJenResponce(self, **data) - acts as main method, finds response by obtaining result from database and generates summary for long user messages. 
+# Classes:
+TherapistJen.therapistJenResponce(self, data) - acts as main method, finds response by obtaining result from database and generates summary for long user messages. 
 
 parsingStringFunction.negativeThoughtsOrGoals(userMessage) - returns 'negative' or 'goals' as the user responds to TherapistJen.
 
@@ -51,11 +48,10 @@ JenDatabaseQueryTechniques.getFeeling(userMessage) - associates userMessage with
 
 JenDatabaseQueryTechniques.checkSynonym(userMessage) - attempts to match userMessage with category of feeling by calling on searchStringFor to check for synonyms of feelings. Defaults to "nothing" if no match is found.
 
-
 # New Features Implemented
 (1) A spell checker was added to the system, which improved the program by being able to recognize important key words even when they have been misspelled. This improves the flow of the conversation.
 
-![Recognizes spelling error](https://ibb.co/XSHWG6N)
+[Recognizes spelling error](https://ibb.co/XSHWG6N)
 
 (2) Natural Language Processing, POS Tagging. By adding this to the system, the program is then able to preprocess user input by filtering out adjectives.
 
